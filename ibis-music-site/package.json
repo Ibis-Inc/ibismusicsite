@@ -16,12 +16,18 @@
     "cf-typegen": "wrangler types && mv worker-configuration.d.ts src/"
   },
   "files": [
+
     "dist",
+
     "!dist/**/*.test.*",
+
     "!dist/**/*.spec.*"
+
   ],
   "sideEffects": [
+
     "**/*.css"
+
   ],
   "svelte": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -42,6 +48,7 @@
     "@sveltejs/kit": "^2.0.0",
     "@sveltejs/package": "^2.0.0",
     "@sveltejs/vite-plugin-svelte": "^4.0.0",
+    "@tailwindcss/typography": "^0.5.14",
     "autoprefixer": "^10.4.20",
     "drizzle-kit": "^0.22.0",
     "publint": "^0.2.0",
@@ -53,6 +60,8 @@
     "wrangler": "^3.87.0"
   },
   "dependencies": {
+    "@auth/core": "^0.37.4",
+    "@auth/sveltekit": "^1.7.4",
     "@libsql/client": "^0.9.0",
     "@node-rs/argon2": "^1.1.0",
     "@oslojs/crypto": "^1.0.1",
